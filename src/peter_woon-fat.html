@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <title>Peter Woon-Fat's Website</title>
+  <base href="peter_woon-fat.html" target="_blank">
+  <!--define metadata-->
+  <meta charset="UTF-8">
+  <meta name="keywords" content="Peter Woon-Fat, Portfolio, Experience, Projects">
+  <meta name="description" content="Webpage displaying Computer Science student, Peter Woon-Fat's,
+  skills and experience">
+  <meta name="author" content="Peter Woon-Fat">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--link to stylesheet-->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!--header contains nav bar with links to different sections of the web page-->
+  <header>
+    <div>
+      <ul>
+        <li><a href="#about-me-section" target="_self"><strong>About Me</strong></a></li>
+        <li><a href="#work-experience-section" target="_self"><strong>Work Experience</strong></a></li>
+        <li><a href="#projects-section" target="_self"><strong>Projects</strong></a></li>
+      </ul>
+    </div>
+    <div id="header-banner">
+      <h1 class="header-text header-name"><strong>Peter Woon-Fat</strong></h1>
+      <h1 class="header-text header-email" title="Email me about any inquiries!"><i>peterwoonfat@yahoo.ca</i></h1>
+      <h1 class="header-text header-github"><a href="https://github.com/peterwoonfat" target="_blank" title="Visit my github account!" 
+        style="text-decoration: none; color:rgb(161, 203, 245);"><i>github.com/peterwoonfat</i></a></h1>
+    </div>
+  </header>
+
+  <!--about me section - content notes my education, skills, and achievements-->
+  <div id="about-me-section">
+    <h1 style="font-size: 48px;"><strong>About Me</strong></h1>
+    <hr>
+    <div class="about-me-text">
+      <h2>Education & Skills</h1>
+      <ul>
+        <li>4th year computer science major at the university of guelph & minoring in psychology</li>
+        <li>Focus on working with data structures and applying alogorithms to solve practical problems.</li>
+        <li>Proficient in Python, Java, C, R, HTML, CSS.</li>
+        <li>Familiar with Git version control.</li>
+        <li>Knowledgeable about refactoring legacy (Fortran, Ada, and Cobol) code.</li>
+      </ul>
+    </div>
+    <div>
+      <a href="fullsize-java-snippet.html" title="fullsize-java-snippet.html"><img id="about-me-image1" 
+        src="../resources/images/java-game-demo-screenshot.JPG" alt="High school java game code snippet"></a>
+    </div>
+    <div>
+      <a href="fullsize-achievement-image.html" title="fullsize-achievement-image.html"><img id="about-me-image2" 
+        src="../resources/images/WIP.png" alt="PLACEHOLDER"></a>
+    </div>
+    <div class="about-me-text">
+      <h2>Achievements</h1>
+      <ul>
+        <li>Received Best Design Award in the 2017 UTM Appathon - designed an appealing website using HTML and CSS</li>
+        <li>Competitor in 2018 High School Hackathon - worked in a team to developing algorithms to solve practical problems.</li>
+        <li>Received a certificate for 8 years of study of the French language.</li>
+        <li>Attained Dean's Honor Roll (awarded to students with academic average above 80%) in the recent Winter 2021 semester.</li>
+      </ul>
+    </div>
+    <div class="about-me-text" style="margin-top: 20px;">
+      <h2>Fun Facts</h2>
+      <ul>
+        <li>I'm a Coffee addict</li>
+        <li>I attained a 2nd degree black belt in Taekwondo</li>
+        <li>I love pizza</li>
+        <li>I am open minded and love learning about all fields of programming and design</li>
+      </ul>
+    </div>
+  </div>
+
+  <!--work experience section - contains an graphic outlining my work experience-->
+  <div id="work-experience-section">
+    <h1 style="font-size: 48px;"><strong>Work Experience</strong></h1>
+    <hr>
+    <!--implement a <map> (image map) for experience timeline??-->
+      <img src="../resources/images/work-experience-timeline.JPG" alt="Work experience timeline" id="work-experience-image"
+        usemap="#timeline-map title">
+      <map name="timeline-map">
+        <area shape="rect" coords="11, 500, 320, 582" alt="Kenna" href="https://www.kenna.ca/">
+      </map>
+  </div>
+
+  <!--projects section - showcases 3 personal projects (python game, wordpress website, java game)-->
+  <div id="projects-section">
+    <h1 class="projects-section-header"><strong>Projects</strong></h1>
+    <div id="project-icons">
+      <a class="icon-link" href="#python-memory-game" target="_self"><img class="icon-img" src="../resources/images/memory-matching-game-img.jpg"></a>
+      <a class="icon-link" href="#wordpress-website" target="_self"><img class="icon-img" src="../resources/images/WordPress-Logo.png"></a>
+      <a class="icon-link" href="#" target="_self"><img class="icon-img" src="../resources/images/WIP.png"></a>
+    </div>
+    <div id="python-memory-game">
+      <h2 style="font-size: 36px;">Python Memory Game Using tkinter</h2>
+      <div class="left">
+        <div id="mem-game-img">
+          <p></p>
+        </div>
+      </div>
+      <div class="right">
+        <p>I created a memory matching game in Python, using tkinter for the GUI. The game has 12 cards and the player can flip
+        over 2 cards at a time, revealing their respective letters. When the player selects 2 cards with matching letters, the player
+        gains points - the player wins by matching all 6 pairs of cards.</p>
+      </div>
+      <hr>
+      <div class="center">
+        <p>The goal of this project was to learn Python and further my understanding of the concepts of object oriented programming.<br>
+          A large part of the game are the cards, which are programmed as buttons. All 12 cards are instances of the Card class,<br>
+          allowing them to share functionality while also possessing their own attributes. I designed the Card class to display<br>
+          encapsulation by using accessor and mutator methods for when other objects want to modify a card's attributes.<br><br>
+          In upgrading my project from console output to an interactive GUI I imported the random and tkinter modules as well as<br>
+          a few tkinter classes. Working with the tkinter and the heirarchy of the elements, greatly helped my understanding of inheritance.</p>
+      </div>
+    </div>
+    <div id="wordpress-website">
+      <h2 style="font-size: 36px;">WordPress Website</h2>
+      <hr>
+      <iframe src="https://peterwoonfat.wordpress.com/" title="WordPress Website detailing co-op experience at Kenna"></iframe>
+      <hr>
+      <div class="left">
+        <p>At the end of my second year of study at the University of Guelph, I secured a co-op as a Data Collection and Integration Assistant
+          at Kenna. A detailed account of my co-op experience can be found on the <a href="https://peterwoonfat.wordpress.com/">WordPress website</a>
+          showcased above. The website features a page reporting my co-op experience, a page introducing myself, and a page containing
+          my contact information.</p>
+      </div>
+      <div class="right">
+        <p>This co-op was an eye opening experience, allowing me to improve on my time management, communication, and teamwork skills. The 
+          website recounts my responsibilities as a Data Collection and Integration Assistant as well as the knowledge and skills I gained
+          working at Kenna. While working as a Data Collection and Integration Assistant, I learned how to better analyze and organize 
+          data and I also gained insight into the integral role database management can play for a company.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--script initializes the first image in the compilation of images for the python memory game section upon the document loading-->
+  <script>
+    document.addEventListener("load", setMemGameImg());
+
+    function setMemGameImg() {
+      document.getElementById("mem-game-img").style.backgroundImage = "url('../resources/images/mem-game-img1.JPG')";
+      document.getElementById("mem-game-img").style.backgroundPosition = "center";
+      document.getElementById("mem-game-img").style.backgroundSize = "contain";
+      document.getElementById("mem-game-img").style.backgroundRepeat = "no-repeat";
+    }
+  </script>
+
+  <!--script contains functions that iterate through a compilation of images in the python memory game section-->
+  <script>
+    setInterval(changeMemGameImg, 2000);
+
+    var images = ["../resources/images/mem-game-img2.JPG", "../resources/images/mem-game-img3.JPG", "../resources/images/mem-game-img4.JPG", "../resources/images/mem-game-img1.JPG"];
+    var index = 0;
+
+    function changeMemGameImg() {
+      if (index === images.length) {
+        index = 0;
+      }
+      document.getElementById("mem-game-img").style.backgroundImage = "url(" + images[index] + ")";
+      document.getElementById("mem-game-img").style.backgroundPosition = "center";
+      document.getElementById("mem-game-img").style.backgroundSize = "contain";
+      document.getElementById("mem-game-img").style.backgroundRepeat = "no-repeat";
+      index++;
+    }
+  </script>
+</body>
+</html>
